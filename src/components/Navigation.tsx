@@ -58,7 +58,7 @@ const Navigation = () => {
               </button>
             ))}
             <Button
-              onClick={() => window.open("https://drive.google.com/file/d/1VTPZFzM0Hefmr91YsrVk9Vzp0w8wXhv4/view?usp=sharing", "_blank", "noopener")}
+              onClick={() => window.open("https://drive.google.com/file/d/19cEPsiDLeVjCeduY7FwrVq9Z-1F1dr1I/view?usp=sharing", "_blank", "noopener")}
               className="bg-gradient-primary hover:shadow-glow transition-all"
             >
               Download CV
@@ -89,7 +89,7 @@ const Navigation = () => {
             ))}
             <div className="px-4 pt-3">
               <Button
-                onClick={() => window.open("https://drive.google.com/file/d/1VTPZFzM0Hefmr91YsrVk9Vzp0w8wXhv4/view?usp=sharing", "_blank", "noopener")}
+                onClick={() => window.open("https://drive.google.com/file/d/19cEPsiDLeVjCeduY7FwrVq9Z-1F1dr1I/view?usp=sharing", "_blank", "noopener")}
                 className="w-full bg-gradient-primary hover:shadow-glow transition-all"
               >
                 Download CV

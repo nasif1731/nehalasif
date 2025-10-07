@@ -49,7 +49,7 @@ const Hero = () => {
                 View Projects
               </Button>
               <Button
-                onClick={() => window.open("https://drive.google.com/file/d/1VTPZFzM0Hefmr91YsrVk9Vzp0w8wXhv4/view?usp=sharing", "_blank", "noopener")}
+                onClick={() => window.open("https://drive.google.com/file/d/19cEPsiDLeVjCeduY7FwrVq9Z-1F1dr1I/view?usp=sharing", "_blank", "noopener")}
                 size="lg"
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary/10"
