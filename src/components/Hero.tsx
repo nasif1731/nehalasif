@@ -84,19 +84,8 @@ const Hero = () => {
               </Button>
             </div>
 
-            {/* Mini stats */}
-            <div className="grid grid-cols-3 gap-4 pt-6 max-w-md mx-auto md:mx-0">
-              {[
-                { k: "98%+", v: "Model Accuracy" },
-                { k: "7+", v: "Shipped Projects" },
-                { k: "GenAI", v: "Specialization" },
-              ].map((s) => (
-                <div key={s.v} className="text-center md:text-left">
-                  <div className="font-display text-2xl font-bold text-gradient">{s.k}</div>
-                  <div className="text-xs text-muted-foreground mt-1">{s.v}</div>
-                </div>
-              ))}
-            </div>
+
+
           </div>
 
           {/* Right Content - Profile Image */}
