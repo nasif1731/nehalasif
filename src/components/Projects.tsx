@@ -151,7 +151,7 @@ const Projects = () => {
                   </CardTitle>
                   <p className="text-sm text-muted-foreground">{project.subtitle}</p>
                 </CardHeader>
-                <CardContent className="relative space-y-4">
+                <CardContent className="relative space-y-4 flex flex-col flex-1">
                   <p className="text-foreground/75 text-sm leading-relaxed">
                     {project.description}
                   </p>
@@ -168,7 +168,7 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  <div className="flex gap-2 pt-2">
+                  <div className="flex gap-2 pt-2 mt-auto">
                     <Button
                       onClick={() => window.open(project.link, "_blank", "noopener")}
                       variant="outline"
@@ -182,7 +182,7 @@ const Projects = () => {
                       onClick={() => window.open(project.link, "_blank", "noopener")}
                       size="sm"
                       variant="ghost"
-                      className="hover:bg-primary/10 hover:text-primary"
+                      className="shrink-0 hover:bg-primary/10 hover:text-primary"
                       aria-label="Open project"
                     >
                       <ExternalLink size={14} />
