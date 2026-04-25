@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid md:grid-cols-[1.15fr_1fr] gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
           {/* Left Content */}
-          <div className="space-y-7 animate-fade-in-up text-center md:text-left">
+          <div className="space-y-7 animate-fade-in-up text-center md:text-left order-2 md:order-1">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass text-xs font-mono text-muted-foreground">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
@@ -89,7 +89,7 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Profile Image */}
-          <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div className="flex justify-center animate-fade-in order-1 md:order-2" style={{ animationDelay: "0.2s" }}>
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-primary rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity animate-glow" />
               <div className="absolute -inset-1 bg-gradient-to-br from-primary via-accent to-primary rounded-full opacity-60 blur-sm" />
