@@ -126,11 +126,11 @@ const Projects = () => {
             ))}
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {filtered.map((project, index) => (
               <Card
                 key={project.title}
-                className="group relative overflow-hidden glass border-border/60 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-elegant animate-fade-in-up flex flex-col h-full"
+                className="group relative overflow-hidden glass border-border/60 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-elegant animate-fade-in-up flex h-full min-h-[380px] flex-col"
                 style={{ animationDelay: `${index * 0.06}s` }}
               >
                 {/* gradient hover overlay */}
@@ -142,7 +142,7 @@ const Projects = () => {
                     </span>
                   </div>
                 )}
-                <CardHeader className="relative">
+                <CardHeader className="relative min-h-[138px] pr-20">
                   <div className="text-[10px] font-mono uppercase tracking-wider text-primary/80 mb-2">
                     {project.category}
                   </div>
@@ -151,12 +151,12 @@ const Projects = () => {
                   </CardTitle>
                   <p className="text-sm text-muted-foreground">{project.subtitle}</p>
                 </CardHeader>
-                <CardContent className="relative space-y-4 flex flex-col flex-1">
-                  <p className="text-foreground/75 text-sm leading-relaxed">
+                <CardContent className="relative flex flex-1 flex-col gap-4">
+                  <p className="min-h-[72px] text-foreground/75 text-sm leading-relaxed">
                     {project.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-1.5">
+                  <div className="flex min-h-[58px] flex-wrap content-start gap-1.5">
                     {project.tech.map((tech) => (
                       <Badge
                         key={tech}
@@ -168,12 +168,12 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  <div className="flex gap-2 pt-2 mt-auto">
+                  <div className="mt-auto flex items-center gap-2 pt-2">
                     <Button
                       onClick={() => window.open(project.link, "_blank", "noopener")}
                       variant="outline"
                       size="sm"
-                      className="flex-1 border-primary/40 text-foreground hover:bg-primary/10 hover:border-primary"
+                      className="h-9 flex-1 justify-center gap-2 border-primary/40 text-foreground hover:bg-primary/10 hover:border-primary"
                     >
                       <Github size={14} />
                       View Code
@@ -182,7 +182,7 @@ const Projects = () => {
                       onClick={() => window.open(project.link, "_blank", "noopener")}
                       size="sm"
                       variant="ghost"
-                      className="shrink-0 hover:bg-primary/10 hover:text-primary"
+                      className="h-9 w-9 shrink-0 p-0 hover:bg-primary/10 hover:text-primary"
                       aria-label="Open project"
                     >
                       <ExternalLink size={14} />
