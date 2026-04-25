@@ -130,7 +130,7 @@ const Projects = () => {
             {filtered.map((project, index) => (
               <Card
                 key={project.title}
-                className="group relative overflow-hidden glass border-border/60 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-elegant animate-fade-in-up"
+                className="group relative overflow-hidden glass border-border/60 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-elegant animate-fade-in-up flex flex-col h-full"
                 style={{ animationDelay: `${index * 0.06}s` }}
               >
                 {/* gradient hover overlay */}
