@@ -3,24 +3,43 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const experiences = [
   {
+    title: "Associate AI & Automations Engineer",
+    company: "9D Technologies — Lahore, Pakistan",
+    period: "July 2026 – Present",
+    description:
+      "Architected autonomous agentic procurement workflows that dynamically provision server infrastructure, deploying production LLMs across serverless GPUs and vLLM, with node-level telemetry for real-time VPN fleet monitoring and alerting.",
+    current: true,
+  },
+  {
+    title: "Research Assistant",
+    company: "FAST-NUCES",
+    period: "Aug 2024 – Present",
+    description:
+      "Research in data mining, audio data processing, and NLP over large-scale text corpora; exploring LLM-based information extraction.",
+    current: true,
+  },
+  {
     title: "Data Scraper Intern",
-    company: "Programmers Force",
-    period: "May 2025 – Aug 2025",
-    description: "Utilized a dedicated scraping tool to extract data; performed validation/cleaning for downstream analytics.",
+    company: "Programmers Force — Lahore, Pakistan",
+    period: "May 2025 – Oct 2025",
+    description:
+      "Engineered automated data pipelines to collect, validate, and preprocess structured datasets for downstream ML model training.",
     current: false,
   },
   {
-    title: "Teaching Assistant — Discrete Structures",
+    title: "Teaching Assistant",
     company: "FAST-NUCES",
-    period: "Jan 2024 – Jun 2024",
-    description: "Assignment design; guidance in logic, proofs, discrete math.",
+    period: "Jan 2024 – June 2026",
+    description:
+      "Mentored 350+ students in Data Science for SE (ML pipelines, feature engineering) and Software Design (Microservices, SOLID).",
     current: false,
   },
   {
-    title: "Teaching Assistant — Programming Fundamentals",
+    title: "President, Software Engineering Society (SES)",
     company: "FAST-NUCES",
-    period: "Aug 2023 – Jan 2024",
-    description: "Conducted C++ labs, debug sessions; mentored algorithms/problem solving.",
+    period: "Sep 2025 – June 2026",
+    description:
+      "Led a 50+ member technical society — operations, industrial tours (Devsinc), platform engineering and Git/GitHub workshops, hackathons, and academia–industry networking events.",
     current: false,
   },
 ];
@@ -66,7 +85,14 @@ const Experience = () => {
                             <p className="text-primary font-medium">{exp.company}</p>
                           </div>
                         </div>
-                        <p className="text-sm text-muted-foreground mb-3">{exp.period}</p>
+                        <div className="flex items-center gap-2 mb-3">
+                          <p className="text-sm text-muted-foreground">{exp.period}</p>
+                          {exp.current && (
+                            <span className="text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full bg-accent/15 text-accent border border-accent/30">
+                              Current
+                            </span>
+                          )}
+                        </div>
                         <p className="text-foreground/80">{exp.description}</p>
                       </CardContent>
                     </Card>

@@ -1,50 +1,58 @@
-import { Brain, Code2, Database, Cloud, Wrench } from "lucide-react";
+import { Brain, Code2, Database, Cloud, Wrench, Bot } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
   {
-    title: "AI/ML Frameworks",
-    icon: Brain,
-    color: "text-primary",
-    bgColor: "bg-primary/10",
-    skills: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "HuggingFace", "NumPy", "Pandas"],
-  },
-  {
-    title: "GenAI & Audio",
-    icon: Brain,
-    color: "text-accent",
-    bgColor: "bg-accent/10",
-    skills: ["LLM Pipelines", "TTS (Coqui)", "Deepgram", "OpenVoice", "Whisper", "DeepSeek"],
-  },
-  {
-    title: "Programming",
+    title: "Languages",
     icon: Code2,
     color: "text-primary",
     bgColor: "bg-primary/10",
-    skills: ["Python", "C++", "Java", "Haskell", "TypeScript"],
+    skills: ["Python", "Java", "C/C++", "JavaScript", "SQL"],
+  },
+  {
+    title: "ML / AI",
+    icon: Brain,
+    color: "text-accent",
+    bgColor: "bg-accent/10",
+    skills: ["PyTorch", "TensorFlow", "LangChain", "LangGraph", "CrewAI", "HuggingFace", "Transformers", "LoRA", "RAG"],
+  },
+  {
+    title: "LLMs",
+    icon: Bot,
+    color: "text-primary",
+    bgColor: "bg-primary/10",
+    skills: ["Llama 3", "Mistral-7B", "GPT-2", "Prompt Engineering", "Fine-tuning", "Quantization (GGUF/4-bit)", "Vector Embeddings"],
+  },
+  {
+    title: "MLOps",
+    icon: Cloud,
+    color: "text-accent",
+    bgColor: "bg-accent/10",
+    skills: ["FastAPI", "Docker", "Kubernetes", "GitHub Actions", "CI/CD", "Terraform", "Model Serving"],
   },
   {
     title: "Databases",
     icon: Database,
-    color: "text-accent",
-    bgColor: "bg-accent/10",
-    skills: ["MongoDB", "MySQL", "Oracle", "PostgreSQL"],
-  },
-  {
-    title: "Cloud & DevOps",
-    icon: Cloud,
     color: "text-primary",
     bgColor: "bg-primary/10",
-    skills: ["AWS", "Docker", "CI/CD", "Git", "GitHub Actions"],
+    skills: ["MongoDB", "PostgreSQL", "ChromaDB", "Zilliz", "Vector DBs"],
   },
   {
-    title: "Tools & Others",
+    title: "NLP & Testing",
     icon: Wrench,
     color: "text-accent",
     bgColor: "bg-accent/10",
-    skills: ["N8N", "Selenium", "Streamlit", "Flask", "Jupyter"],
+    skills: ["ViT", "SentencePiece", "BPE Tokenization", "NER", "PyTest", "Appium", "Playwright"],
   },
+];
+
+const certifications = [
+  "AI Agents Fundamentals — Hugging Face",
+  "Building RAG Apps — MongoDB",
+  "Programming with JavaScript — Meta",
+  "Git 101 — GitHub",
+  "Cohere Labs ML Summer School 2025",
 ];
 
 const Skills = () => {
@@ -83,16 +91,16 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Data Science Specialties */}
+          {/* Certifications */}
           <Card className="mt-8 shadow-card">
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-foreground mb-4 text-center">
-                Data Science Specialties
+                Certifications
               </h3>
               <div className="flex flex-wrap justify-center gap-3">
-                {["Regression Analysis", "EDA", "Data Visualization", "Model Building", "Feature Engineering", "Statistical Modeling"].map((specialty, i) => (
+                {certifications.map((cert, i) => (
                   <Badge key={i} className="bg-gradient-primary text-primary-foreground">
-                    {specialty}
+                    {cert}
                   </Badge>
                 ))}
               </div>
