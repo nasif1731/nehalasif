@@ -42,18 +42,19 @@ const Hero = () => {
                 <span className="block text-gradient">Asif.</span>
               </h1>
               <div className="flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 text-base md:text-lg font-mono text-muted-foreground">
-                <span className="text-primary">ML / AI</span>
+                <span className="text-primary">AI Engineer</span>
                 <span className="opacity-40">/</span>
-                <span className="text-accent">GenAI</span>
+                <span className="text-accent">Agentic Systems</span>
                 <span className="opacity-40">/</span>
-                <span className="text-primary">Data Science</span>
+                <span className="text-primary">MLOps</span>
               </div>
             </div>
 
             <p className="text-lg md:text-xl text-foreground/75 leading-relaxed max-w-xl mx-auto md:mx-0">
-              Building intelligent systems that bridge research and real-world
-              impact — ML pipelines, NLP/LLMs, and AI safety.
+              Building autonomous AI systems end to end — multi-agent orchestration,
+              fine-tuned LLMs, and production ML infrastructure.
             </p>
+
 
             <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
               <Button
