@@ -2,7 +2,7 @@ import { ArrowDown, Download, Mail, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile.jpg";
 
-const CV_URL = "https://drive.google.com/file/d/1fJwhrA_1QsqkWbVohN_4LLG5Su-tJnZm/view?usp=sharing";
+const CV_URL = "https://drive.google.com/file/d/15ImrQMDdDf6XApUHWIUo3jJKpXlJ_EfB/view?usp=sharing";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
