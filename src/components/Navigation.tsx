@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useActiveSection } from "@/hooks/useScrollReveal";
 import { cn } from "@/lib/utils";
 
-const CV_URL = "https://drive.google.com/file/d/1fJwhrA_1QsqkWbVohN_4LLG5Su-tJnZm/view?usp=sharing";
+const CV_URL = "https://drive.google.com/file/d/15ImrQMDdDf6XApUHWIUo3jJKpXlJ_EfB/view?usp=sharing";
 
 const navItems = [
   { label: "Home", id: "home" },
