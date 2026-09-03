@@ -17,15 +17,17 @@ const About = () => {
             <Card className="shadow-card hover:shadow-elegant transition-shadow">
               <CardContent className="p-8">
                 <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                  I'm a Software Engineering student at FAST-NUCES with a deep passion for Machine Learning and Generative AI. 
-                  My work focuses on building robust ML pipelines, developing AI safety systems, and creating practical solutions 
-                  that make complex AI technologies accessible and reliable.
+                  I'm an AI & Automations Engineer and Software Engineering graduand from FAST-NUCES, working across
+                  agentic systems, LLM fine-tuning, and production MLOps. I build pipelines that take models from
+                  research notebooks to serving infrastructure — vLLM on serverless GPUs, LangGraph orchestration,
+                  and governance layers that keep them auditable.
                 </p>
                 <p className="text-lg text-foreground/80 leading-relaxed">
-                  I'm driven by curiosity and a systems-thinking mindset, always looking to bridge the gap between cutting-edge 
-                  research and real-world applications. Whether it's detecting deepfake audio, automating audiobook production, 
-                  or classifying research papers with LLMs, I love tackling challenging problems at the intersection of AI and impact.
+                  My recent work spans audio safety with RAG fact-checking, autonomous hematology diagnostics with
+                  vision transformers, and multi-agent ML orchestration. Alongside engineering, I research NLP and
+                  audio data mining, and I've mentored 350+ students as a teaching assistant.
                 </p>
+
               </CardContent>
             </Card>
 
