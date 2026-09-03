@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-type Category = "All" | "GenAI" | "ML" | "Data";
+type Category = "All" | "GenAI" | "ML" | "MLOps";
 
 interface Project {
   title: string;
@@ -19,72 +19,84 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Detectify",
-    subtitle: "Deepfake Audio & Bug Classification",
+    title: "MicCheck AI",
+    subtitle: "Final Year Project — Audio Safety Platform",
     description:
-      "AI safety tool with 98%+ accuracy on Urdu deepfake detection; automated multi-label bug classification.",
-    tech: ["Scikit-learn", "TensorFlow", "Keras", "Librosa", "Streamlit"],
-    link: "https://github.com/nasif1731/Detectify",
-    featured: true,
-    category: "ML",
-  },
-  {
-    title: "Audiobook Automation",
-    subtitle: "GenAI Pipelines",
-    description:
-      "Deepgram (ASR) + Coqui TTS orchestrated via N8N; outperformed OpenVoice; ~70% manual effort reduction.",
-    tech: ["Deepgram", "Coqui TTS", "N8N", "Python"],
-    link: "https://github.com/nasif1731/AudioBookAutomation",
+      "End-to-end pipeline: transcription (AssemblyAI), toxicity classification (Llama 3), voice cloning (ElevenLabs) — 98% accuracy across 8 risk categories, plus hybrid RAG fact-checking with BGE-M3.",
+    tech: ["FastAPI", "MongoDB", "Zilliz", "AssemblyAI", "ElevenLabs", "Llama 3"],
+    link: "https://github.com/nasif1731",
     featured: true,
     category: "GenAI",
   },
   {
-    title: "Research Paper Annotation",
-    subtitle: "LLM Classification",
+    title: "NexusOps",
+    subtitle: "Autonomous ML Orchestrator",
     description:
-      "Classifies NeurIPS papers into 6 categories; hybrid DeepSeek-R1 (Ollama) + Gemini API; MySQL storage; robust rate-limit handling.",
-    tech: ["DeepSeek-R1", "Gemini API", "Ollama", "MySQL"],
-    link: "https://github.com/nasif1731/Research-Paper-Annotation-with-LLMs",
+      "LangGraph workflows with CrewAI multi-agent execution; LLM governance auditor with 6-point compliance validation and SHA-256 audit logs.",
+    tech: ["LangGraph", "CrewAI", "Kubernetes", "FastAPI", "Groq", "Llama 3.3"],
+    link: "https://github.com/nasif1731",
     featured: true,
+    category: "MLOps",
+  },
+  {
+    title: "CytoVeris",
+    subtitle: "Hematology Diagnostics Pipeline",
+    description:
+      "Autonomous diagnostics integrating fine-tuned VLMs and cell morphometry through stateful LangGraph workflows with clinical guardrails.",
+    tech: ["PyTorch", "LangGraph", "Vision Transformers", "FastAPI", "LoRA"],
+    link: "https://github.com/nasif1731",
+    featured: true,
+    category: "ML",
+  },
+  {
+    title: "ViT-Food101",
+    subtitle: "Vision Transformer Fine-tuning",
+    description:
+      "Fine-tuned ViT on 101K images for 101-class food classification; 82.5% test accuracy with <200ms inference, deployed as a Gradio app.",
+    tech: ["PyTorch", "Transformers", "ViT", "Gradio"],
+    link: "https://github.com/nasif1731",
+    category: "ML",
+  },
+  {
+    title: "EmpatheticChatbot",
+    subtitle: "Transformer From Scratch",
+    description:
+      "Custom encoder-decoder with emotion-conditioned generation; 32K-vocab BPE tokenizer, beam search and top-k/p sampling with BLEU/ROUGE-L evaluation.",
+    tech: ["PyTorch", "Transformers", "SentencePiece"],
+    link: "https://github.com/nasif1731",
+    category: "ML",
+  },
+  {
+    title: "Legal-Eagle",
+    subtitle: "Contract Compliance Auditor",
+    description:
+      "RAG auditor against 41 legal rules using 4-bit quantized Mistral-7B with structured Status/Evidence/Remediation output in a Gradio interface.",
+    tech: ["LangChain", "ChromaDB", "Mistral-7B", "Gradio", "RAG"],
+    link: "https://github.com/nasif1731",
     category: "GenAI",
   },
   {
-    title: "NeurIPS Scraper & Classifier",
-    subtitle: "Automated Paper Classification",
-    description: "Python pipeline scraping/classifying papers; ~80% manual annotation reduction.",
-    tech: ["Python", "BeautifulSoup", "Pandas"],
-    link: "https://github.com/nasif1731/NeurIPS-scrapper",
-    category: "Data",
-  },
-  {
-    title: "Disease Category Predictor",
-    subtitle: "Healthcare ML",
+    title: "Med-RAG",
+    subtitle: "Medical Q&A Retrieval",
     description:
-      "Streamlit app (TF-IDF + KNN + SMOTE), ~85–90% accuracy on imbalanced healthcare datasets.",
-    tech: ["Streamlit", "Scikit-learn", "SMOTE"],
-    link: "https://github.com/nasif1731/disease-predictor",
-    category: "ML",
+      "RAG pipeline indexing 600+ clinical transcriptions with HuggingFace embeddings; evaluated on 32 queries with negative-control refusal handling.",
+    tech: ["LangChain", "ChromaDB", "Mistral-7B-Instruct", "HuggingFace"],
+    link: "https://github.com/nasif1731",
+    category: "GenAI",
   },
   {
-    title: "COVID-19 Mobility Analysis",
-    subtitle: "Stochastic Modeling",
+    title: "RecipeGPT",
+    subtitle: "LoRA Fine-tuned GPT-2",
     description:
-      "Flask dashboard using Markov Chains, HMM, M/M/1 Queueing on Google Mobility Reports; interactive insights.",
-    tech: ["Flask", "NumPy", "Pandas", "Plotly"],
-    link: "https://github.com/nasif1731/Covid19_MobilityAnalysisUsingStochasticProcesses",
-    category: "Data",
-  },
-  {
-    title: "Neural Networks — MNIST",
-    subtitle: "Deep Learning Fundamentals",
-    description: "~98% accuracy with PyTorch (dropout, weight init, LR scheduling).",
-    tech: ["PyTorch", "NumPy"],
-    link: "https://github.com/nasif1731/Neural_Networks-Deep_Learning",
-    category: "ML",
+      "Fine-tuned GPT-2 with LoRA (0.48% trainable params) and custom control tokens; 8.90 perplexity on genre-conditioned recipe synthesis.",
+    tech: ["PyTorch", "Transformers", "GPT-2", "LoRA"],
+    link: "https://github.com/nasif1731",
+    category: "GenAI",
   },
 ];
 
-const categories: Category[] = ["All", "GenAI", "ML", "Data"];
+const categories: Category[] = ["All", "GenAI", "ML", "MLOps"];
+
 
 const Projects = () => {
   const [filter, setFilter] = useState<Category>("All");

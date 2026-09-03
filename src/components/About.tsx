@@ -17,15 +17,17 @@ const About = () => {
             <Card className="shadow-card hover:shadow-elegant transition-shadow">
               <CardContent className="p-8">
                 <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                  I'm a Software Engineering student at FAST-NUCES with a deep passion for Machine Learning and Generative AI. 
-                  My work focuses on building robust ML pipelines, developing AI safety systems, and creating practical solutions 
-                  that make complex AI technologies accessible and reliable.
+                  I'm an AI & Automations Engineer and Software Engineering graduand from FAST-NUCES, working across
+                  agentic systems, LLM fine-tuning, and production MLOps. I build pipelines that take models from
+                  research notebooks to serving infrastructure — vLLM on serverless GPUs, LangGraph orchestration,
+                  and governance layers that keep them auditable.
                 </p>
                 <p className="text-lg text-foreground/80 leading-relaxed">
-                  I'm driven by curiosity and a systems-thinking mindset, always looking to bridge the gap between cutting-edge 
-                  research and real-world applications. Whether it's detecting deepfake audio, automating audiobook production, 
-                  or classifying research papers with LLMs, I love tackling challenging problems at the intersection of AI and impact.
+                  My recent work spans audio safety with RAG fact-checking, autonomous hematology diagnostics with
+                  vision transformers, and multi-agent ML orchestration. Alongside engineering, I research NLP and
+                  audio data mining, and I've mentored 350+ students as a teaching assistant.
                 </p>
+
               </CardContent>
             </Card>
 
@@ -40,18 +42,25 @@ const About = () => {
                     <h3 className="text-2xl font-bold text-foreground mb-2">Education</h3>
                     <div className="space-y-2">
                       <p className="text-lg font-semibold text-foreground">
-                        Bachelors in Software Engineering
+                        B.S. Software Engineering
                       </p>
                       <p className="text-muted-foreground">
-                        National University of Computer and Emerging Sciences (FAST-NUCES), Pakistan
+                        FAST National University of Computer and Emerging Sciences (FAST-NUCES), Faisalabad, Pakistan
                       </p>
-                      <div className="flex items-center gap-4 text-sm">
-                        <span className="text-muted-foreground">2022 – Present</span>
+                      <p className="text-sm text-muted-foreground">
+                        Coursework: Machine Learning, Deep Learning, AI, Data Structures, Algorithms, Software Architecture
+                      </p>
+                      <div className="flex flex-wrap items-center gap-3 text-sm">
+                        <span className="text-muted-foreground">Aug 2022 – June 2026</span>
                         <span className="px-3 py-1 bg-primary/20 text-primary rounded-full font-semibold">
-                          CGPA: 3.90/4.00
+                          CGPA: 3.91/4.00
+                        </span>
+                        <span className="px-3 py-1 bg-accent/20 text-accent rounded-full font-semibold">
+                          Summa Cum Laude
                         </span>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </CardContent>
