@@ -24,7 +24,7 @@ const projects: Project[] = [
     description:
       "End-to-end pipeline: transcription (AssemblyAI), toxicity classification (Llama 3), voice cloning (ElevenLabs) — 98% accuracy across 8 risk categories, plus hybrid RAG fact-checking with BGE-M3.",
     tech: ["FastAPI", "MongoDB", "Zilliz", "AssemblyAI", "ElevenLabs", "Llama 3"],
-    link: "https://github.com/nasif1731",
+    link: "https://github.com/nasif1731/MicCheck",
     featured: true,
     category: "GenAI",
   },
@@ -34,7 +34,7 @@ const projects: Project[] = [
     description:
       "LangGraph workflows with CrewAI multi-agent execution; LLM governance auditor with 6-point compliance validation and SHA-256 audit logs.",
     tech: ["LangGraph", "CrewAI", "Kubernetes", "FastAPI", "Groq", "Llama 3.3"],
-    link: "https://github.com/nasif1731",
+    link: "https://github.com/nasif1731/NexusOps",
     featured: true,
     category: "MLOps",
   },
@@ -44,7 +44,7 @@ const projects: Project[] = [
     description:
       "Autonomous diagnostics integrating fine-tuned VLMs and cell morphometry through stateful LangGraph workflows with clinical guardrails.",
     tech: ["PyTorch", "LangGraph", "Vision Transformers", "FastAPI", "LoRA"],
-    link: "https://github.com/nasif1731",
+    link: "https://github.com/nasif1731/CytoVeris",
     featured: true,
     category: "ML",
   },
@@ -54,7 +54,7 @@ const projects: Project[] = [
     description:
       "Fine-tuned ViT on 101K images for 101-class food classification; 82.5% test accuracy with <200ms inference, deployed as a Gradio app.",
     tech: ["PyTorch", "Transformers", "ViT", "Gradio"],
-    link: "https://github.com/nasif1731",
+    link: "https://github.com/nasif1731/ViT-Food101",
     category: "ML",
   },
   {
@@ -63,7 +63,7 @@ const projects: Project[] = [
     description:
       "Custom encoder-decoder with emotion-conditioned generation; 32K-vocab BPE tokenizer, beam search and top-k/p sampling with BLEU/ROUGE-L evaluation.",
     tech: ["PyTorch", "Transformers", "SentencePiece"],
-    link: "https://github.com/nasif1731",
+    link: "https://github.com/nasif1731/EmpatheticChatbot",
     category: "ML",
   },
   {
@@ -72,7 +72,7 @@ const projects: Project[] = [
     description:
       "RAG auditor against 41 legal rules using 4-bit quantized Mistral-7B with structured Status/Evidence/Remediation output in a Gradio interface.",
     tech: ["LangChain", "ChromaDB", "Mistral-7B", "Gradio", "RAG"],
-    link: "https://github.com/nasif1731",
+    link: "https://github.com/nasif1731/Legal-Eagle",
     category: "GenAI",
   },
   {
@@ -81,7 +81,7 @@ const projects: Project[] = [
     description:
       "RAG pipeline indexing 600+ clinical transcriptions with HuggingFace embeddings; evaluated on 32 queries with negative-control refusal handling.",
     tech: ["LangChain", "ChromaDB", "Mistral-7B-Instruct", "HuggingFace"],
-    link: "https://github.com/nasif1731",
+    link: "https://github.com/nasif1731/Med-RAG",
     category: "GenAI",
   },
   {
@@ -90,7 +90,7 @@ const projects: Project[] = [
     description:
       "Fine-tuned GPT-2 with LoRA (0.48% trainable params) and custom control tokens; 8.90 perplexity on genre-conditioned recipe synthesis.",
     tech: ["PyTorch", "Transformers", "GPT-2", "LoRA"],
-    link: "https://github.com/nasif1731",
+    link: "https://github.com/nasif1731/RecipeGPT",
     category: "GenAI",
   },
 ];
