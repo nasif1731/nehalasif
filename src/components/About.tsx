@@ -17,7 +17,7 @@ const About = () => {
             <Card className="shadow-card hover:shadow-elegant transition-shadow">
               <CardContent className="p-8">
                 <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                  I'm an AI & Automations Engineer and Software Engineering graduand from FAST-NUCES, working across
+                  I'm an AI & Automations Engineer and Software Engineering graduate from FAST-NUCES, working across
                   agentic systems, LLM fine-tuning, and production MLOps. I build pipelines that take models from
                   research notebooks to serving infrastructure — vLLM on serverless GPUs, LangGraph orchestration,
                   and governance layers that keep them auditable.
